@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="d82cbfaa-3ca5-4235-8098-51ea17a32947" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/../.idea/August 23.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/.idea/csv-editor.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/main.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/run.bat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/New Text Document.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/data_scrape_20230924.xlsx" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/data_scrape_20230924.xlsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/aktialkv.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/aktialkv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/base.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/base.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/bo.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/bo.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/centrallkv.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/centrallkv.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/kotimeklarit.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/kotimeklarit.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/qvadrat.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/qvadrat.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/roof.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/roof.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/solidhouse.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/solidhouse.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/sothebysrealty.py" beforeDir="false" afterPath="$PROJECT_DIR$/../../Sep 23/Real Estates Properties Scraper/multi_real_estates_scrapers/multi_real_estates_scrapers/spiders/sothebysrealty.py" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2UWdYkQAHauBQMSwlCk8Pnn3Qkh" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "git-widget-placeholder": "main",
+    "last_opened_file_path": "D:/Wrok/grw_office/Office_Grw/August 23/Chemist Warehouse Products Scraper",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Python.thalia">
+    <configuration name="ibood" type="PythonConfigurationType" factoryName="Python">
+      <module name="Sales Products Scraper (with Revenue Calculator)" />
+      <option name="INTERPRETER_OPTIONS" value="-Xfrozen_modules=off" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sales_products/sales_products" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../env/Scripts/scrapy" />
+      <option name="PARAMETERS" value="crawl ibood" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="muller" type="PythonConfigurationType" factoryName="Python">
+      <module name="Sales Products Scraper (with Revenue Calculator)" />
+      <option name="INTERPRETER_OPTIONS" value="-Xfrozen_modules=off" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sales_products/sales_products" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../env/Scripts/scrapy" />
+      <option name="PARAMETERS" value="crawl muller" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="radwelt" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="Sales Products Scraper (with Revenue Calculator)" />
+      <option name="INTERPRETER_OPTIONS" value="-Xfrozen_modules=off" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sales_products/sales_products" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../env/Scripts/scrapy" />
+      <option name="PARAMETERS" value="crawl radwelt" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="thalia" type="PythonConfigurationType" factoryName="Python">
+      <module name="Sales Products Scraper (with Revenue Calculator)" />
+      <option name="INTERPRETER_OPTIONS" value="-Xfrozen_modules=off" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/sales_products/sales_products" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/../../../env/Scripts/scrapy" />
+      <option name="PARAMETERS" value="crawl thalia" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.muller" />
+      <item itemvalue="Python.thalia" />
+      <item itemvalue="Python.ibood" />
+      <item itemvalue="Python.radwelt" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.radwelt" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d82cbfaa-3ca5-4235-8098-51ea17a32947" name="Changes" comment="" />
+      <created>1693059326170</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1693059326170</updated>
+      <workItem from="1693059344987" duration="6484000" />
+      <workItem from="1693300861640" duration="852000" />
+      <workItem from="1693310151733" duration="1570000" />
+      <workItem from="1693315468493" duration="1079000" />
+      <workItem from="1693915309446" duration="766000" />
+      <workItem from="1694068074835" duration="20000" />
+      <workItem from="1694069951571" duration="675000" />
+      <workItem from="1694082247498" duration="709000" />
+      <workItem from="1694436373310" duration="7675000" />
+      <workItem from="1694502557709" duration="3603000" />
+      <workItem from="1695129862756" duration="229000" />
+      <workItem from="1695889060107" duration="2056000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sales_products/sales_products/spiders/ibood.py</url>
+          <line>52</line>
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sales_products/sales_products/spiders/base.py</url>
+          <line>91</line>
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sales_products/sales_products/spiders/ibood.py</url>
+          <line>55</line>
+          <option name="timeStamp" value="30" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sales_products/sales_products/spiders/base.py</url>
+          <line>94</line>
+          <option name="timeStamp" value="44" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/sales_products/sales_products/spiders/thalia.py</url>
+          <line>22</line>
+          <option name="timeStamp" value="45" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/Sales_Products_Scraper__with_Revenue_Calculator_$radwelt_shop.coverage" NAME="radwelt Coverage Results" MODIFIED="1693062453531" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sales_products/sales_products" />
+    <SUITE FILE_PATH="coverage/Sales_Products_Scraper__with_Revenue_Calculator_$ibood.coverage" NAME="ibood Coverage Results" MODIFIED="1694439909467" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sales_products/sales_products" />
+    <SUITE FILE_PATH="coverage/Sales_Products_Scraper__with_Revenue_Calculator_$thalia.coverage" NAME="thalia Coverage Results" MODIFIED="1694507967542" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sales_products/sales_products" />
+    <SUITE FILE_PATH="coverage/Sales_Products_Scraper__with_Revenue_Calculator_$muller.coverage" NAME="muller Coverage Results" MODIFIED="1694452880374" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/sales_products/sales_products" />
+  </component>
+</project>
