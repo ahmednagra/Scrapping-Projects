@@ -1,4 +1,5 @@
 Address,street number,Type,Rooms,Other,Size (m2),Agency url,Agency name
+Puistokatu,7,"1,350,000 €",4,,133 ,https://bo.fi/kohde/545078/,bo
 Merikatu,25,"4,500,000 €",7,,208 ,https://bo.fi/kohde/544951/,bo
 Korkeavuorenkatu,3,"995,000 €",4,,101 ,https://bo.fi/kohde/544946/,bo
 Pietarinkatu,1,"942,000 €",3,,124 ,https://bo.fi/kohde/544931/,bo
@@ -28,7 +29,7 @@ Raatimiehenkatu,1,"1,070,000 €",3,,105.5 ,https://bo.fi/kohde/543797/,bo
 Vuorimiehenkatu,5,"3,690,000 €",6,,222 ,https://bo.fi/kohde/543758/,bo
 Kasarmikatu,28,"1,890,000 €",3,,182 ,https://bo.fi/kohde/543701/,bo
 Pietarinkatu,15,"198,000 €",1,,24 ,https://bo.fi/kohde/543672/,bo
-Kapteeninkatu,24,"399,000 €",2,,42 ,https://bo.fi/kohde/543271/,bo
+Kapteeninkatu,24,"389,000 €",2,,42 ,https://bo.fi/kohde/543271/,bo
 Neitsytpolku b,2,"598,000 €",2,,65 ,https://bo.fi/kohde/543153/,bo
 Hernesaarenkatu,7,"1,960,000 €",,,187.5 ,https://bo.fi/kohde/543115/,bo
 Pietarinkatu,11,"518,000 €",2,,65 ,https://bo.fi/kohde/542948/,bo

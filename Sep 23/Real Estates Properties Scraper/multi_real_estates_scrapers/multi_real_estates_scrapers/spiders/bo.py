@@ -37,28 +37,24 @@ class BospiderSpider(BaseSpider):
         return address
 
     def get_street_number(self, response):
-        # address = response.css('.realty-grid__single__content__address h3::text').get('')
         address = ''.join(response.css('.realty-grid__single__content__address h3::text').get('').split()[1:2])
-        # street_no = ''.join(re.findall(r'\d', address_row))
-        # return street_no
+
         if '-' in address:
             street_no = re.sub(r'\D-\D', '', address)
         else:
             street_no = ''.join(re.findall(r'\d', address))
         return street_no
 
-
     def get_price(self, response):
         return response.css('.realty-grid__single__content__price span::text').get('')\
             .replace('€', '').strip().replace(' ', ',') + ' €'
 
     def get_rooms(self, response):
-        # return ''.join(re.findall(r'\d',  response.css('.realty-grid-oneliner::text').get('')))
-
         rooms = response.css('.realty-grid-oneliner::text').re_first(r'(\d+)s*h')
         rooms = rooms or response.css('.realty-grid-oneliner::text').re_first(r'(\d+)s* h')
 
         return rooms
+
     def get_size(self, response):
         return response.css('.realty-grid__single__content__price span + span::text ').get('').strip()\
             .replace('m²', '').replace('m', '').replace(',', '.')

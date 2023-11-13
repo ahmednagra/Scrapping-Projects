@@ -51,7 +51,6 @@ class QvadratSpider(BaseSpider):
         return street_number
 
     def get_price(self, response):
-        # price = '{:,}'.format(int(response.get('price', '')))
         price = response.get('debtFreePrice', '').replace('€', '').replace('\xa0', '').replace(',', '').replace(' ', '').strip()
         price = '{:,}'.format(int(price))
 

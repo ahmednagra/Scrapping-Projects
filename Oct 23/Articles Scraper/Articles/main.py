@@ -1,41 +1,45 @@
+import csv
+import glob
+
 from scrapy.crawler import CrawlerProcess
 from scrapy.utils.project import get_project_settings
 
-from twisted.internet import defer
-from twisted.internet import reactor
 from spiders.mmamania import MmaManiaSpider
 from spiders.cleantuesdayparis import CleantuesdayparisSpider
-from spiders.methods import read_output_files, update_google_sheet
+from spiders.topiti import TopitoSpider
+
+from spiders.base import BaseSpider
 
 
-def start_sequentially(crawler_process, crawlers):
-    # Create a deferred chain to run the crawlers sequentially
-    d = defer.Deferred()
-    chain = d
-    for crawler in crawlers:
-        print(f'{crawler} spider is started')
-        chain.addCallback(lambda _, c=crawler: crawl(crawler_process, c))
+def start_sequentially(process: CrawlerProcess, crawlers: list):
+    print('start crawler {}'.format(crawlers[0].__name__))
+    deferred = process.crawl(crawlers[0])
 
-    # Fire the first deferred to start the chain
-    d.callback(None)
-    return d
+    if len(crawlers) > 1:
+        deferred.addCallback(lambda _: start_sequentially(process, crawlers[1:]))
 
 
-def crawl(crawler_process, spider):
-    d = crawler_process.crawl(spider)
-    return d
+def read_output_files():
+    output_files = glob.glob('output/*.csv')
+    rows = []
+
+    for output_file in output_files:
+        with open(output_file, mode='r', encoding='utf8') as input_file:
+            csv_reader = csv.DictReader(input_file)
+            for row in csv_reader:
+                rows.append(row)
+
+    return rows
 
 
 if __name__ == '__main__':
-    # spider_names = [MmaManiaSpider, CleantuesdayparisSpider]  # Use the spider name, not the spider class
-    # crawlers = [crawler for crawler in spider_names]
+    spider_crawlers = [MmaManiaSpider, CleantuesdayparisSpider, TopitoSpider]
 
-    # crawler_process = CrawlerProcess(get_project_settings())
-    # d = start_sequentially(crawler_process, crawlers)
+    crawler_process = CrawlerProcess(get_project_settings())
+    start_sequentially(crawler_process, spider_crawlers)
+    crawler_process.start()
     #
-    # d.addBoth(lambda _: reactor.stop())
-    # reactor.run()
-
     output_files_read = read_output_files()
-    file = update_google_sheet(data=output_files_read)
 
+    base_spider = BaseSpider()
+    base_spider.update_google_sheet(data=output_files_read)

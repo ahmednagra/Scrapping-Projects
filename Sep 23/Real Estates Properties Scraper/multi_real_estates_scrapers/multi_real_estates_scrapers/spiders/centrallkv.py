@@ -32,7 +32,6 @@ class centrallkvSpider(BaseSpider):
         return address
 
     def get_street_number(self, response):
-        # return ''.join(re.findall(r'\d', response.css('.header h3::text').get('')))
         address = ''.join(response.css('.header h3::text').get('').split()[1:2])
         if '-' in address:
             street_no = re.sub(r'\D-\D', '', address)

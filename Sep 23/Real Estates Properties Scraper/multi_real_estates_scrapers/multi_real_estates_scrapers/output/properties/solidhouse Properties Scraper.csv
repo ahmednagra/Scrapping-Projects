@@ -1,4 +1,18 @@
 Address,street number,Type,Rooms,Other,Size (m2),Agency url,Agency name
+Maisemamaalauksenkatu,3,"258,000 €",,,54.5 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/kuninkaantammi/80309504,solidhouse
+Saparokuja,8,"449,000 €",,,269 ,https://www.solidhouse.fi/kohde/asunto/salo/halikko_as/harkhaka/80292325,solidhouse
+Hallinharjanne,11,"449,000 €",,,109.7 ,https://www.solidhouse.fi/kohde/asunto/tampere/tampere/vuores/80309349,solidhouse
+Michailowinkatu,4,"229,000 €",,,48.5 ,"https://www.solidhouse.fi/kohde/asunto/turku/turku/kakolanmaki,_kakola/80309789",solidhouse
+Tuohimäki,7,"419,000 €",,,98 ,https://www.solidhouse.fi/kohde/asunto/espoo/espoo/pohjois-tapiola/80308237,solidhouse
+Varkkavuorenkatu,38,"169,000 €",,,77 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/hepokulta/80308557,solidhouse
+Kortesuontie,121,"435,000 €",,,115 ,https://www.solidhouse.fi/kohde/asunto/pyharanta/santtio/santtio/80310488,solidhouse
+Ruonanperäntie,212,"105,000 €",,,170 ,https://www.solidhouse.fi/kohde/asunto/uusikaupunki/kalanti/ruonanpera/80307946,solidhouse
+Varnankatu,4,"198,000 €",,,119 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/suikkila/80294935,solidhouse
+Helsinginkatu,1211,"318,000 €",,,47.3 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/kallio/80305307,solidhouse
+Lehmuskatu,10,"132,000 €",,,49.5 ,https://www.solidhouse.fi/kohde/asunto/kerava/kerava/savio/80309078,solidhouse
+Runeberginkatu,21,"833,000 €",,,112.7 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/toolo/80307830,solidhouse
+Liisankatu,11,"169,000 €",,,51 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/luolavuori/80309417,solidhouse
+Nervanderinkatu,10,"98,500 €",,,58 ,https://www.solidhouse.fi/kohde/asunto/uusikaupunki/uusikaupunki/keskusta/80307890,solidhouse
 Kempintie,9,"118,000 €",,,56.5 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/lotskeri/80309662,solidhouse
 Runkokatu,6,"89,500 €",,,60 ,https://www.solidhouse.fi/kohde/asunto/tampere/tampere/haukiluoma/80306568,solidhouse
 Laulurastaankuja,1,"188,000 €",,,58.5 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/malmi/80308996,solidhouse
@@ -102,7 +116,6 @@ Ruhtinaankatu,8,"67,000 €",,,44 ,https://www.solidhouse.fi/kohde/asunto/pori/p
 Kaarinankatu,2,"159,000 €",,,32.5 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/itainen_keskusta/80305900,solidhouse
 Pähkinäkuja,131,"118,000 €",,,98 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/pietniemi/80306810,solidhouse
 Saanatunturintie,1,"189,600 €",,,55 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/mellunmaki/80304716,solidhouse
-Kunnallissairaalantie,80,"280,000 €",,,77 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/pajamaki/80306476,solidhouse
 Murtomaantie,2,"169,000 €",,,61.5 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/raunistula/80305367,solidhouse
 Kuohukuja,5,"224,000 €",,,73 ,https://www.solidhouse.fi/kohde/asunto/vantaa/vantaa/myyrmaki/80307260,solidhouse
 Kivalterintie,22,"205,000 €",,,50 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/oulunkyla/80307814,solidhouse
@@ -110,7 +123,6 @@ Neitsytpolku,9,"559,000 €",,,57 ,https://www.solidhouse.fi/kohde/asunto/helsin
 Meteorinkatu,8,"265,000 €",,,80 ,https://www.solidhouse.fi/kohde/asunto/espoo/espoo/olari/80304078,solidhouse
 Koivukylän puistotie,14,"158,000 €",,,73.5 ,https://www.solidhouse.fi/kohde/asunto/vantaa/vantaa/koivukyla/80303583,solidhouse
 Graniittilinnankatu,2,"284,000 €",,,56 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/kakola/80025902,solidhouse
-Stålarminkatu,9,"358,000 €",,,104 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/martti/80287556,solidhouse
 Saloviuksenpiha,2,"248,000 €",,,61 ,https://www.solidhouse.fi/kohde/asunto/kirkkonummi/kirkkonummi/keskusta/80307578,solidhouse
 Käpypolku,1,"318,000 €",,,222 ,https://www.solidhouse.fi/kohde/asunto/kerava/kerava/savio/80292715,solidhouse
 Minkinreitti,3,"495,000 €",,,131 ,https://www.solidhouse.fi/kohde/asunto/kangasala/kangasala/mantyveraja/80306815,solidhouse
@@ -156,7 +168,6 @@ Ruosniementie,230,"82,000 €",,,95 ,https://www.solidhouse.fi/kohde/asunto/pori
 Huuhkajantie,7,"115,000 €",,,59.5 ,https://www.solidhouse.fi/kohde/asunto/rauma/rauma/pyynpaa/80304568,solidhouse
 Luhtipolku,7,"169,000 €",,,184 ,https://www.solidhouse.fi/kohde/asunto/ulvila/ulvila/keskusta/80305449,solidhouse
 Vehkaniitunkatu,29,"425,000 €",,,197 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/pitkamaki/80305136,solidhouse
-Lautamiehentie,7,"79,000 €",,,56.5 ,https://www.solidhouse.fi/kohde/asunto/salo/halikko/halikko/80305735,solidhouse
 Uuttelankuja,4,"118,000 €",,,118.5 ,https://www.solidhouse.fi/kohde/asunto/salo/salo/halikko/80305683,solidhouse
 Juhannuskatu,9,"167,000 €",,,50 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/pohjola/80306846,solidhouse
 Salaistentie,11,"174,000 €",,,167 ,https://www.solidhouse.fi/kohde/asunto/salo/salo/paukkula/80306419,solidhouse
@@ -195,7 +206,7 @@ Loukkurantie,25,"154,000 €",,,132 ,https://www.solidhouse.fi/kohde/asunto/ulvi
 Kulmatie,7-9,"190,000 €",,,92 ,https://www.solidhouse.fi/kohde/asunto/rusko/rusko/knaapinmaki/80303671,solidhouse
 Köyrintie,22,"143,000 €",,,189 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/koivula/80304569,solidhouse
 Ekmaninkatu,1,"157,000 €",,,76.5 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/nattinummi/80305234,solidhouse
-Kannuskatu,8,"105,000 €",,,50.5 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/uittamo/80305253,solidhouse
+Kannuskatu,8,"99,000 €",,,50.5 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/uittamo/80305253,solidhouse
 Rosalankuja,5,"229,000 €",,,40 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/kruunuvuorenranta/80298118,solidhouse
 Kohmankaari,9,"115,000 €",,,20.5 ,https://www.solidhouse.fi/kohde/asunto/tampere/tampere/tesoma/80297524,solidhouse
 Hyytänpiha,4,"342,000 €",,,181 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/yli-maaria/80304322,solidhouse
@@ -319,9 +330,8 @@ Sinebrychoffinkatu,11,"595,000 €",,,83.5 ,https://www.solidhouse.fi/kohde/asun
 Strömbergintie,4,"229,000 €",,,30 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/pitajanmaki/80296896,solidhouse
 Huovintie,9,"695,000 €",,,258 ,https://www.solidhouse.fi/kohde/asunto/vantaa/vantaa/kivisto/80295891,solidhouse
 Pietarinkatu,15,"235,000 €",,,24 ,https://www.solidhouse.fi/kohde/asunto/helsinki/ullanlinna/ullanlinna/80298025,solidhouse
-Näsientie,24,"89,000 €",,,79.2 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/pietniemi/80127955,solidhouse
 Anttoorantie,,"449,000 €",,,,https://www.solidhouse.fi/kohde/asunto/pori/pori/lampaluoto/80292625,solidhouse
-Herralahdenkatu,8,"69,000 €",,,46.75 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/itatulli/80297336,solidhouse
+Herralahdenkatu,8,"65,000 €",,,46.75 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/itatulli/80297336,solidhouse
 Saloviuksenpiha,2,"199,000 €",,,48 ,"https://www.solidhouse.fi/kohde/asunto/kirkkonummi/kirkkonummi/kirkkonummi,_keskusta/80112935",solidhouse
 Teerentie,12,"455,000 €",,,137 ,https://www.solidhouse.fi/kohde/asunto/tampere/tampere/jarvensivu/80296968,solidhouse
 Nuottalahdentie,13,"544,000 €",,,110 ,https://www.solidhouse.fi/kohde/asunto/espoo/espoo/nuottalahti/80295650,solidhouse
@@ -344,7 +354,6 @@ Mullintie,4,"232,000 €",,,80 ,https://www.solidhouse.fi/kohde/asunto/turku/tur
 Lumpeenkatu,8,"335,000 €",,,93.9 ,https://www.solidhouse.fi/kohde/asunto/tampere/tampere/rantaperkio/80296877,solidhouse
 Hirsipadontie,7,"235,000 €",,,80.5 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/oulunkyla___patola/80295255,solidhouse
 Tapulikatu,5,"150,000 €",,,44 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/martti/80297526,solidhouse
-Koukkuniementie,6,"510,000 €",,,93 ,"https://www.solidhouse.fi/kohde/asunto/espoo/espoo/koukkuniemi,_matinkyla/80297379",solidhouse
 Matarakuja,5,"189,000 €",,,284 ,https://www.solidhouse.fi/kohde/asunto/laitila/laitila/kaukola/80295567,solidhouse
 Läntinen Pitkäkatu,16,"185,000 €",,,42 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/keskusta/80296558,solidhouse
 Haarlankatu,5,"359,000 €",,,84.5 ,https://www.solidhouse.fi/kohde/asunto/tampere/tampere/onkiniemi/80297126,solidhouse
@@ -352,7 +361,7 @@ Poutamäentie,8,"216,000 €",,,48 ,https://www.solidhouse.fi/kohde/asunto/helsi
 Viertolankaari,20,"268,000 €",,,82 ,https://www.solidhouse.fi/kohde/asunto/lieto/lieto/vierunpuisto___kahloja/80296353,solidhouse
 Mukulatie,1,"208,000 €",,,108 ,https://www.solidhouse.fi/kohde/asunto/lempaala/lempaala/kulju_vainola/80296920,solidhouse
 Angervonkuja,1,"149,000 €",,,100.8 ,https://www.solidhouse.fi/kohde/asunto/salo/salo/anjala/80295148,solidhouse
-Eskonkatu,8,"142,000 €",,,60 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/nattinummi/80296379,solidhouse
+Eskonkatu,8,"137,000 €",,,60 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/nattinummi/80296379,solidhouse
 Vaasankatu,2,"382,000 €",,,66 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/sornainen/80295370,solidhouse
 Paimenkatu,312,"298,000 €",,,112 ,https://www.solidhouse.fi/kohde/asunto/raisio/raisio/kuuanlaakso/80294969,solidhouse
 Malagankatu,4,"520,000 €",,,70.5 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/jatkasaari/80296740,solidhouse
@@ -397,7 +406,6 @@ Matintie,53,"150,000 €",,,118 ,https://www.solidhouse.fi/kohde/asunto/nakkila/
 Tainantie,1,"198,000 €",,,,https://www.solidhouse.fi/kohde/asunto/vantaa/vantaa/paivakumpu/80296244,solidhouse
 Runosmäenkatu,4,"57,000 €",,,33 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/runosmaki/80294125,solidhouse
 Rauhankatu,17,"159,000 €",,,36 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/keskusta/80294534,solidhouse
-Tikkutehtaankuja,5,"227,000 €",,,49.5 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/kahari/80291851,solidhouse
 Rastaantie,4,"239,000 €",,,140 ,"https://www.solidhouse.fi/kohde/asunto/ulvila/ulvila/loukkura,_vanhakyla/80292725",solidhouse
 Kantosienenkatu,2,"196,900 €",,,91.5 ,https://www.solidhouse.fi/kohde/asunto/nokia/nokia/taka-lauttala/80290000,solidhouse
 Överbyntie,14,"221,000 €",,,85.5 ,"https://www.solidhouse.fi/kohde/asunto/kirkkonummi/kirkkonummi/overby,_kuusala/80295381",solidhouse
@@ -426,7 +434,7 @@ Amiraalistonkatu,7,"179,000 €",,,42.5 ,https://www.solidhouse.fi/kohde/asunto/
 Lauttasaarenmäki,4,"498,000 €",,,62 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/lauttasaari/80295363,solidhouse
 Vuokkopolku,3,"153,000 €",,,275 ,https://www.solidhouse.fi/kohde/asunto/laitila/laitila/keskusta/80294788,solidhouse
 Tankomäenkatu,3,"315,000 €",,,72.5 ,"https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/vartiokyla,_mellunmaki/80295297",solidhouse
-Armas Branderin katu,8,"915,000 €",,,467 ,https://www.solidhouse.fi/kohde/asunto/kangasala/kangasala/pikonlinna/80295292,solidhouse
+Armas branderin katu,8,"899,000 €",,,467 ,https://www.solidhouse.fi/kohde/asunto/kangasala/kangasala/pikonlinna/80295292,solidhouse
 Vilhonvuorenkuja,20,"329,000 €",,,44.5 ,"https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/kallio,_sornainen/80295293",solidhouse
 Kuusikuja,4,"320,000 €",,,80 ,https://www.solidhouse.fi/kohde/asunto/kuopio/tahkovuori/tahkovuori/80295287,solidhouse
 Frans Emilin katu,1,"249,000 €",,,72 ,https://www.solidhouse.fi/kohde/asunto/tampere/tampere/vuores/80295283,solidhouse
@@ -453,7 +461,6 @@ Meijerintie,1,"159,000 €",,,51.5 ,https://www.solidhouse.fi/kohde/asunto/mants
 Eestintaival,18,"250,000 €",,,81.5 ,https://www.solidhouse.fi/kohde/asunto/espoo/espoo/noykkio___eestinlaakso/80295121,solidhouse
 Oritie,2,"89,000 €",,,61 ,https://www.solidhouse.fi/kohde/asunto/vantaa/vantaa/hakunila/80127474,solidhouse
 Laajaniityntie,12,"234,000 €",,,89 ,https://www.solidhouse.fi/kohde/asunto/vantaa/vantaa/martinlaakso/80295120,solidhouse
-Teiskontie,19,"178,000 €",,,62.5 ,https://www.solidhouse.fi/kohde/asunto/tampere/tampere/kaleva/80295123,solidhouse
 Estetie,4,"369,000 €",,,104 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/maununneva/80295091,solidhouse
 Luostarinkatu,15,"149,000 €",,,60.5 ,https://www.solidhouse.fi/kohde/asunto/rauma/rauma/keskusta/80295098,solidhouse
 Miharintie,7,"99,000 €",,,100 ,https://www.solidhouse.fi/kohde/asunto/rauma/lappi/lappi_keskusta/80295096,solidhouse
@@ -500,9 +507,7 @@ Santarannantie,35,"63,000 €",,,100 ,https://www.solidhouse.fi/kohde/asunto/rau
 Länsipuisto,26,"179,000 €",,,92.5 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/keskusta/80294839,solidhouse
 Valtakatu,3,"114,000 €",,,67 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/keskusta/80292771,solidhouse
 Uuttelankuja,4,"104,000 €",,,118.5 ,https://www.solidhouse.fi/kohde/asunto/salo/salo/halikko/80294396,solidhouse
-Elokatu,25,"139,000 €",,,144 ,https://www.solidhouse.fi/kohde/asunto/harjavalta/harjavalta/vinnari/80125476,solidhouse
 Katavakaupungintie,55,"79,900 €",,,45 ,https://www.solidhouse.fi/kohde/asunto/merikarvia/koortila/koortila/80025665,solidhouse
-Hääveläntie,24,"180,000 €",,,203 ,https://www.solidhouse.fi/kohde/asunto/nousiainen/nousiainen/koljola/80291960,solidhouse
 Suovantie,60,"230,000 €",,,120 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/kaerla/80292536,solidhouse
 Rälssikatu,2,"398,000 €",,,122 ,https://www.solidhouse.fi/kohde/asunto/raisio/raisio/kuuanlaakso/80294748,solidhouse
 Voudinkatu,6,"76,000 €",,,59.5 ,https://www.solidhouse.fi/kohde/asunto/kaarina/kaarina/hovirinta/80294742,solidhouse
@@ -515,7 +520,6 @@ Kirjurintie,4,"315,000 €",,,74.8 ,https://www.solidhouse.fi/kohde/asunto/helsi
 Laajaniitynkuja,3,"230,000 €",,,76 ,https://www.solidhouse.fi/kohde/asunto/vantaa/vantaa/martinlaakso/80291498,solidhouse
 Hietalahdenranta,15,"739,000 €",,,60 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/hietalahti/80294580,solidhouse
 Uudenmaankatu,3,"160,000 €",,,38 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/keskusta/80292533,solidhouse
-Hansakatu,9,"239,000 €",,,54 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/portsa/80294286,solidhouse
 Laviantie,48,"99,000 €",,,160 ,https://www.solidhouse.fi/kohde/asunto/pori/noormarkku/noormarkku/80292661,solidhouse
 Aittalahdentie,30,"59,000 €",,,144 ,https://www.solidhouse.fi/kohde/asunto/pori/noormarkku/noormarkku/80294583,solidhouse
 Syvänsalmenkatu,9,"219,000 €",,,34.5 ,https://www.solidhouse.fi/kohde/asunto/espoo/espoo/finnoo/80292752,solidhouse
@@ -554,7 +558,6 @@ Haarakalliontie,27,"335,000 €",,,173 ,https://www.solidhouse.fi/kohde/asunto/s
 Tankomäenkatu,14,"279,000 €",,,69 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/tankovainio/80292704,solidhouse
 Aaronaukio,2,"189,000 €",,,33 ,https://www.solidhouse.fi/kohde/asunto/tampere/tampere/kaleva/80293947,solidhouse
 Yliopistonkatu,9,"257,000 €",,,62 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/keskusta/80292531,solidhouse
-Rauhankatu,16,"154,000 €",,,51 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/keskusta/80292543,solidhouse
 Riutojankatu,1,"135,000 €",,,82 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/palli/80293861,solidhouse
 Itäinen Rantakatu,46,"189,000 €",,,43 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/martti/80292544,solidhouse
 Tiilentekijänkatu,4,"189,000 €",,,59 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/martti/80292534,solidhouse
@@ -582,7 +585,7 @@ Teiskon kirkkotie,723,"139,000 €",,,30 ,https://www.solidhouse.fi/kohde/asunto
 Makkarajärvenkatu,72,"294,000 €",,,71 ,https://www.solidhouse.fi/kohde/asunto/tampere/tampere/hervantajarvi/80291617,solidhouse
 Puolalanpuisto,3,"348,000 €",,,79 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/keskusta/80292044,solidhouse
 Länsilenkki,12,"274,000 €",,,64 ,https://www.solidhouse.fi/kohde/asunto/kirkkonummi/kirkkonummi/keskusta/80292522,solidhouse
-Eerikinkatu,31,"368,000 €",,,94 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/keskusta/80292145,solidhouse
+Eerikinkatu,31,"358,000 €",,,94 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/keskusta/80292145,solidhouse
 Aittakuja,3,"98,500 €",,,133 ,https://www.solidhouse.fi/kohde/asunto/pyharanta/pyharanta/rohdainen/80292469,solidhouse
 Metsontie,1,"35,000 €",,,42 ,https://www.solidhouse.fi/kohde/asunto/taivassalo/taivassalo/taivassalo/80292460,solidhouse
 Antinmäenkatu,47,"358,000 €",,,225 ,https://www.solidhouse.fi/kohde/asunto/porvoo/porvoo/myllymaki/80026032,solidhouse
@@ -625,14 +628,12 @@ Lumparlankatu,11,"79,500 €",,,61 ,https://www.solidhouse.fi/kohde/asunto/raisi
 Kakskerran kirkkotie,,"69,000 €",,,,https://www.solidhouse.fi/kohde/asunto/turku/turku/kakskerta___brinkalan_kyla/80289891,solidhouse
 Porvoonkatu,5-7,"379,000 €",,,69.5 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/alppiharju/80291547,solidhouse
 Kanslerintie,12,"169,000 €",,,86 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/patterihaka/80127690,solidhouse
-Timoteikuja,4,"649,000 €",,,105 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/tapaninkyla/80289812,solidhouse
 Tehtaankatu,12,"149,800 €",,,61.5 ,https://www.solidhouse.fi/kohde/asunto/rauma/rauma/keskusta/80291623,solidhouse
 Jalavatie,15,"70,000 €",,,73.5 ,https://www.solidhouse.fi/kohde/asunto/uusikaupunki/uusikaupunki/hakametsa/80291570,solidhouse
 Harjatie,6,"119,000 €",,,140.9 ,https://www.solidhouse.fi/kohde/asunto/ulvila/harjunpaa/harjunpaa/80290120,solidhouse
 Solvikinkatu,2,"725,000 €",,,140.5 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/aurinkolahti/80127941,solidhouse
 Messukatu,36,"123,000 €",,,98 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/pormestarinluoto/80290173,solidhouse
 Teerikuja,2,"159,000 €",,,224 ,https://www.solidhouse.fi/kohde/asunto/laitila/laitila/kylanpaa/80290111,solidhouse
-Koivulantie,151,"128,000 €",,,55 ,https://www.solidhouse.fi/kohde/asunto/laitila/laitila/koukkela/80128082,solidhouse
 Tilsantie,6-1,"115,000 €",,,80 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/ruosniemi/80127876,solidhouse
 Mulbynmäki,6,"498,500 €",,,120 ,https://www.solidhouse.fi/kohde/asunto/espoo/espoo/kurttila/80290010,solidhouse
 Lehtolantie,8,"149,000 €",,,168 ,https://www.solidhouse.fi/kohde/asunto/rusko/rusko/lehtolantie_8/80127762,solidhouse
@@ -641,7 +642,6 @@ Topiaksenkatu,3,"109,000 €",,,38.5 ,https://www.solidhouse.fi/kohde/asunto/tur
 Rauhankatu,12,"103,000 €",,,70 ,https://www.solidhouse.fi/kohde/asunto/uusikaupunki/uusikaupunki/keskusta/80289961,solidhouse
 Eerikinkatu,5,"198,500 €",,,56 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/keskusta/80290014,solidhouse
 Uudenkartanontie,13,"145,000 €",,,196 ,https://www.solidhouse.fi/kohde/asunto/laitila/laitila/untamala/80289928,solidhouse
-Matinraitti,14,"260,000 €",,,72 ,https://www.solidhouse.fi/kohde/asunto/espoo/espoo/matinkyla/80289695,solidhouse
 Itäinen Rantakatu,74,"448,000 €",,,77 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/telakkaranta/80289894,solidhouse
 Kaukolantie,21,"59,000 €",,,59 ,https://www.solidhouse.fi/kohde/asunto/laitila/laitila/keskusta/80289908,solidhouse
 Haapatie,8,"198,000 €",,,136.6 ,"https://www.solidhouse.fi/kohde/asunto/sipoo/sipoo/nikkila,_suursuo/80109926",solidhouse
@@ -654,7 +654,7 @@ Ilomäentie,18,"75,000 €",,,75 ,https://www.solidhouse.fi/kohde/asunto/laitila
 Lappeentie,471,"399,000 €",,,68 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/vartiokyla/80288421,solidhouse
 Viikkokuja,4,"419,000 €",,,118 ,https://www.solidhouse.fi/kohde/asunto/espoo/espoo/lystimaki/80018814,solidhouse
 Vuotavantie,97,"199,000 €",,,225 ,https://www.solidhouse.fi/kohde/asunto/oripaa/oripaa/haklila/80127363,solidhouse
-Kaarlo Sarkian Katu,7,"364,000 €",,,68 ,https://www.solidhouse.fi/kohde/asunto/espoo/espoo/leppavaara/80017808,solidhouse
+Kaarlo Sarkian Katu,7,"359,000 €",,,68 ,https://www.solidhouse.fi/kohde/asunto/espoo/espoo/leppavaara/80017808,solidhouse
 Pietarinkatu,1,"115,000 €",,,60 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/suikkila/80052164,solidhouse
 Pengerkatu,29,"279,000 €",,,41.1 ,https://www.solidhouse.fi/kohde/asunto/helsinki/helsinki/kallio/80026519,solidhouse
 Hyttysenkatu,7,"125,000 €",,,172 ,https://www.solidhouse.fi/kohde/asunto/turku/turku/perno/80113039,solidhouse
@@ -673,7 +673,7 @@ Suopursuntie,21,"334,000 €",,,251 ,https://www.solidhouse.fi/kohde/asunto/para
 Kuusitie,10,"119,000 €",,,149 ,https://www.solidhouse.fi/kohde/asunto/rauma/rauma/uotila/80127664,solidhouse
 Ponikuja,3,"128,000 €",,,59.5 ,https://www.solidhouse.fi/kohde/asunto/vantaa/vantaa/hakunila/80127540,solidhouse
 Lindalintie,8,"69,000 €",,,49.5 ,https://www.solidhouse.fi/kohde/asunto/kirkkonummi/kirkkonummi/lindal/80026528,solidhouse
-Hankaintie,154,"498,000 €",,,123 ,https://www.solidhouse.fi/kohde/asunto/kirkkonummi/kirkkonummi/sepankannas/80127337,solidhouse
+Hankaintie,154,"525,000 €",,,123 ,https://www.solidhouse.fi/kohde/asunto/kirkkonummi/kirkkonummi/sepankannas/80127337,solidhouse
 Simakekuja,1,"379,000 €",,,134 ,https://www.solidhouse.fi/kohde/asunto/raisio/raisio/merinuorikkala/80109953,solidhouse
 Mäntypuistontie,20,"95,000 €",,,61 ,https://www.solidhouse.fi/kohde/asunto/mynamaki/mynamaki/mantypuistontie_20/80127454,solidhouse
 Korkeamäentie,20,"79,000 €",,,84 ,https://www.solidhouse.fi/kohde/asunto/pomarkku/pomarkku/korkeamaki/80127294,solidhouse
@@ -685,5 +685,5 @@ Kissanmäentie,20,"355,000 €",,,240 ,https://www.solidhouse.fi/kohde/asunto/po
 Uusikoivistontie,40,"105,000 €",,,76.5 ,https://www.solidhouse.fi/kohde/asunto/pori/pori/riihiketo/80127254,solidhouse
 Itäjärventie,220,"129,500 €",,,39 ,https://www.solidhouse.fi/kohde/asunto/siikainen/siikainen/otamo/80127255,solidhouse
 Karrinkatu,2,"89,000 €",,,60.5 ,https://www.solidhouse.fi/kohde/asunto/raisio/raisio/vaisaari/80022041,solidhouse
-Koilahdentie,158,"138,000 €",,,202.9 ,https://www.solidhouse.fi/kohde/asunto/rauma/rauma/monnanummi/80020547,solidhouse
+Koilahdentie,158,"130,000 €",,,202.9 ,https://www.solidhouse.fi/kohde/asunto/rauma/rauma/monnanummi/80020547,solidhouse
 Vh.,123851,"123,851 €",,,78 ,https://www.solidhouse.fi/asunto/turku/kastu/kastuntie_/4083916,solidhouse

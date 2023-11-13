@@ -1,0 +1,5 @@
+bot_token==MTE3MTgwNzU1Mjk0MjY0OTM0NQ.GxpMYD.nsQYlDpuSZi495EEC1uIqRcCkmsBkQbFMVZQWc
+
+googlesheet_id==1q7ZgHY0uqHCgXXIJmUPNABWVQv_GlKNdmRhWTecn9Mo
+tab_name==Discord
+tab_id==0

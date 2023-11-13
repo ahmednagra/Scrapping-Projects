@@ -32,7 +32,6 @@ class SothebysrealtySpider(BaseSpider):
 
     def get_street_number(self, response):
         address = response.css('.apartment-address::text').get('')
-        # street_no = ''.join(re.findall(r'\d', address_row))
         if '-' in address:
             street_no = re.sub(r'[^\d-]', '', address)
         else:

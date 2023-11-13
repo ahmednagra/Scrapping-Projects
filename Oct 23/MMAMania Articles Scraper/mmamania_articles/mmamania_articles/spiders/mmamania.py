@@ -1,6 +1,9 @@
 import csv
+import json
+import re
 from collections import OrderedDict
 
+import requests
 from scrapy import Spider, Request
 
 from googleapiclient.discovery import build
@@ -46,10 +49,16 @@ class MmaManiaSpider(Spider):
         yield Request(url=self.base_url, headers=self.headers)
 
     def parse(self, response, **kwargs):
-        articles = response.css('[data-analytics-link="article:image"]')
+        articles = response.css('.c-five-up__col .c-five-up__entry, .c-compact-river .c-compact-river__entry')
+        thumbnails_data = self.get_thumbnail_data(articles)
 
         for row in articles:
+            if 'data-native-ad-id' in row.get():
+                continue
+
             url = row.css('a::attr(href)').get('')
+            thumbnail_text = row.css('.c-entry-box--compact__title a::text').get('')
+            thumbnail_img = self.get_thumbnail_url(row, thumbnails_data)
 
             if not url:
                 continue
@@ -57,9 +66,9 @@ class MmaManiaSpider(Spider):
             if url in self.gsheet_scraped_items_urls:
                 continue
 
-            main_image = row.css('noscript img ::attr(src)').get('') or row.css('img::attr(src)').get('')
+            main_image = row.css('noscript img ::attr(src)').get('')
 
-            yield Request(url=url, headers=self.headers, callback=self.parse_detail, meta={'main_image': main_image})
+            yield Request(url=url, headers=self.headers, callback=self.parse_detail, meta={'main_image': main_image, 'thumbnail_text': thumbnail_text, 'thumbnail_image': thumbnail_img})
 
     def parse_detail(self, response):
         article_url = response.url
@@ -70,14 +79,17 @@ class MmaManiaSpider(Spider):
         description = response.xpath("//div[@class='c-entry-content ']//*[not(ancestor::aside)]").getall()
         description = ''.join(description)[:32700]
 
-        main_image_url = ''.join(response.css('.e-image--hero img::attr(src)').get('').split('/cdn.vox-cdn.com')[-1:])
-
-        main_image_url = f'https://cdn.vox-cdn.com{main_image_url}' if main_image_url else response.meta.get('main_image', '')
-
         item = OrderedDict()
+        print('url :', response.url)
         item['Title'] = response.css('.c-page-title ::text').get('').strip()
+        item['Thumbnail Title'] = response.meta.get('thumbnail_text', '')
+        category = ', '.join(x.strip() for x in response.css('[aria-labelledby="heading-label--ov8rafdn"] ::text').getall() if x.strip())
+        category = category or ', '.join(x.strip() for x in response.css('.c-entry-group-labels__item ::text').getall() if x.strip())
+        print('category', category)
+        item['Category'] = category
         item['Summary'] = response.css('.c-entry-summary ::text').get('')
-        item['Image URL'] = main_image_url
+        item['Thumbnail URL'] = response.meta.get('thumbnail_image', '')
+        item['Image URL'] = self.get_image_url(response)
         item['Image Text'] = response.css('.e-image--hero .e-image__meta cite ::text').get('')
         item['Description HTML'] = f'<div>{description}</div>'
         item['Published At'] = response.css('[data-ui="timestamp"] ::text').get('').strip()
@@ -156,6 +168,66 @@ class MmaManiaSpider(Spider):
                     pass
 
             return data
+
+    def get_thumbnail_url(self, row, data):
+        thumbnail_image = row.css('source::attr(srcset)').get('').split(',')[0].replace('300w', '').replace('600w',
+                                                                                                            '').strip()
+        thumbnail_image_url = re.search(r'^(.*\.jpg)', thumbnail_image).group(1) if re.search(r'^(.*\.jpg)',
+                                                                                              thumbnail_image) else ''
+        if not thumbnail_image_url:
+            selector = row.css('img::attr(data-cdata)').get('')
+            try:
+                id = json.loads(selector).get('image_id', 0)
+                id = str(id)
+            except Exception as e:
+                print(e)
+                id = {}
+
+            if [x for x in data.keys() if id in x]:
+                thumbnail_image_url = ''.join([x for x in data.values() if id in x])
+            else:
+                try:
+                    res = requests.get(url=f'https://www.mmamania.com/services/optimally_sized_images?imgkeys={id}:*:1:205x115:&asset_keys=')
+                    res_data = res.json().get('urls', {})
+                except Exception as e:
+                    res_data = {}
+
+                if [x for x in res_data.keys() if id in x]:
+                    thumbnail_image_url = ''.join([x for x in res_data.values() if id in x])
+                else:
+                    thumbnail_image_url = ''
+
+        return thumbnail_image_url
+
+    def get_thumbnail_data(self, articles):
+        ids_selector = articles.css('img::attr(data-cdata)').getall()
+        id_list = [int(entry.split('"image_id":')[1].split(",")[0]) for entry in ids_selector]
+        resolution = '273x154'
+        format = 'webp'
+        base_url = 'https://www.mmamania.com/services/optimally_sized_images?imgkeys='
+        id_string = ','.join(f'{id}:*:1:{resolution}:{format}' for id in id_list)
+        url = f'{base_url}{id_string}&asset_keys='
+
+        try:
+            # res = requests.get(url='https://www.mmamania.com/services/optimally_sized_images?imgkeys=72603631:*:1:205x115:webp,72780066:*:1:205x115:webp,72780205:*:1:205x115:webp,72780230:*:1:205x115:webp,72780304:*:1:205x115:webp,72780318:*:1:205x115:webp,72780328:*:1:205x115:webp,72780641:*:1:205x115:webp,72780792:*:1:205x115:webp,72781174:*:1:205x115:webp,72781326:*:1:205x115:webp,72781443:*:1:205x115:webp,72781454:*:1:205x115:webp,72781529:*:1:205x115:webp,72781633:*:1:205x115:webp,72781763:*:1:205x115:webp,72781921:*:1:205x115:webp,72782126:*:1:205x115:webp,72782347:*:1:205x115:webp,72782455:*:1:205x115:webp,72782882:*:1:205x115:webp,72783170:*:1:205x115:webp,72783374:*:1:205x115:webp,72783542:*:1:205x115:webp,72784117:*:1:205x115:webp,72784333:*:1:205x115:webp,72784473:*:1:205x115:webp,72784583:*:1:205x115:webp,72784729:*:1:205x115:webp,72785068:*:1:205x115:webp,72785303:*:1:205x115:webp,72785691:*:1:205x115:webp&asset_keys=')
+            res = requests.get(url=url)
+            data = res.json().get('urls', {})
+        except Exception as e:
+            data = {}
+
+        return data
+
+    def get_image_url(self, response):
+        url = ''.join(response.css('.l-article-body-segment source::attr(srcset)').get('').split(',')[3:4])
+        if url:
+            if 'jpeg' in url:
+                url = url.split('jpeg')[0] + 'jpeg'
+            elif 'jpg' in url:
+                url = url.split('jpg')[0] + 'jpg'
+        else:
+            url = ''
+
+        return url.strip()
 
     def close(spider, reason):
         spider.update_google_sheet()

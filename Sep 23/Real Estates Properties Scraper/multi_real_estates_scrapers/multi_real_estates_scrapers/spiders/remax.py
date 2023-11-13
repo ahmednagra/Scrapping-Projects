@@ -37,6 +37,7 @@ class RemaxSpider(BaseSpider):
         for property_selector in data:
             item = self.get_item(property_selector)
             yield item
+
     def get_address(self, response):
         return response.get('street_address', '').split()[0]
 
