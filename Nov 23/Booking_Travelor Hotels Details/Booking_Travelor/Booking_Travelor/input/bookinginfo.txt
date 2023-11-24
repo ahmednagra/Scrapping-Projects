@@ -1,0 +1,7 @@
+check in date==2023-12-25
+check out date==2023-12-26
+region/hotel== islamabad
+number of adults ==3
+number of  kids==3
+age of kids==5
+number of rooms==2

@@ -1,0 +1,11 @@
+create a script that compares data from two travel websites for specific queries. 
+
+The desired output should be a CSV or Excel file that presents the comparison, enabling me to easily identify and select the most affordable hotel options. 
+The websites to be compared are Booking.com and https://www.travelor.com/he?fid=68193
+
+
+The regular booking paramaters are:
+date, region/hotel, number of pepole (adults/kids), number of rooms
+
+Required Output Fields
+Hotel Name, location, price, rooms, dates (checkin - checkout), adults, children
