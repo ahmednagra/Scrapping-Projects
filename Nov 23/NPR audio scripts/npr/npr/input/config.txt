@@ -1,0 +1,2 @@
+Key is used from deepgram
+api_key==a983ac0a69eca853929eb83c27881b7703d8eb0f

@@ -320,6 +320,13 @@ class HotelsSpider(Spider):
                                                                    '') if city_name_string else self.bookinginfo.get(
             'region/hotel', '')
 
+        item['Search Location'] = self.bookinginfo.get('region/hotel', '')
+        item['Search Rooms'] = self.bookinginfo.get('number of rooms', '')
+        item['Search Adults'] = self.bookinginfo.get('number of adults', '')
+        item['Search Children'] = self.bookinginfo.get('number of  kids', '')
+        item['Search Date Checkin'] = self.bookinginfo.get('check in date', '')
+        item['Search Date Checkout'] = self.bookinginfo.get('check out date', '')
+
         item['Travelor Hotel Name'] = response.css('h1.inline::text').get('')
         item['Travelor Address'] = response.css('.inline-flex .mx-2::text').get('')
         item['Travelor Location'] = travelor_location
@@ -421,6 +428,7 @@ class HotelsSpider(Spider):
         self.writetocsv()
 
     def writetocsv(self):
+
         headers = ['Search Location', 'Search Rooms', 'Search Adults', 'Search Children',
                    'Search Date Checkin', 'Search Date Checkout',
                    'Booking Hotel Name', 'Booking Location', 'Booking Rooms', 'Booking Adults',
@@ -457,3 +465,53 @@ class HotelsSpider(Spider):
         output_file = 'output/Hotels Booking Details.xlsx'
         wb.save(output_file)
         self.logger.info(f'CSV file written: {output_file}')
+
+        booking_headers = ['Search Location', 'Search Rooms', 'Search Adults', 'Search Children',
+                           'Search Date Checkin', 'Search Date Checkout',
+                           'Booking Hotel Name', 'Booking Location', 'Booking Rooms', 'Booking Adults',
+                           'Booking Children', 'Booking Date Checkin', 'Booking Date Checkout',
+                           'Booking Nights', 'Booking Price', 'Booking URL',
+                           ]
+        booking_wb = Workbook()
+        booking_ws = booking_wb.active
+
+        # Write headers to the first row
+        for col_num, header in enumerate(booking_headers, 1):
+            booking_col_letter = get_column_letter(col_num)
+            booking_ws[f"{booking_col_letter}1"] = header
+
+        # Iterate over rows in combined_items
+        for row_num, item in enumerate(self.booking_scraped_items, 2):
+            # Iterate over headers
+            for col_num, header in enumerate(booking_headers, 1):
+                booking_col_letter = get_column_letter(col_num)
+                # Access the value from the combined_item dictionary and write to the worksheet
+                booking_ws[f"{booking_col_letter}{row_num}"] = item.get(header, '_')
+
+        output_file = 'output/Booking Hotels.xlsx'
+        booking_wb.save(output_file)
+
+        travelor_headers = ['Search Location', 'Search Rooms', 'Search Adults', 'Search Children',
+                            'Search Date Checkin', 'Search Date Checkout',
+                            'Travelor Hotel Name', 'Travelor Address', 'Travelor Location', 'Travelor Rooms',
+                            'Travelor Adults', 'Travelor Children', 'Travelor Date Checkin', 'Travelor Date Checkout',
+                            'Travelor Nights', 'Travelor Price', 'Travelor URL'
+                            ]
+        travelor_wb = Workbook()
+        travelor_ws = travelor_wb.active
+
+        # Write headers to the first row
+        for col_num, header in enumerate(travelor_headers, 1):
+            travelor_col_letter = get_column_letter(col_num)
+            travelor_ws[f"{travelor_col_letter}1"] = header
+
+        # Iterate over rows in combined_items
+        for row_num, item in enumerate(self.travelor_scraped_items, 2):
+            # Iterate over headers
+            for col_num, header in enumerate(travelor_headers, 1):
+                travelor_col_letter = get_column_letter(col_num)
+                # Access the value from the combined_item dictionary and write to the worksheet
+                travelor_ws[f"{travelor_col_letter}{row_num}"] = item.get(header, '_')
+
+        output_file = 'output/Travelor Hotels.xlsx'
+        travelor_wb.save(output_file)
