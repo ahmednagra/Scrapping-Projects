@@ -1,29 +1,39 @@
+import logging
+import os
 import glob
 import json
-import os
-from collections import OrderedDict
-from datetime import datetime
 from math import ceil
+from datetime import datetime
+from collections import OrderedDict
 
-from openpyxl.reader.excel import load_workbook
-from openpyxl.workbook import Workbook
 from scrapy import Spider, Request
+
+from openpyxl.workbook import Workbook
+from openpyxl.reader.excel import load_workbook
 
 
 class UsedcarsSpider(Spider):
     name = "cars"
     start_urls = ['https://www.cargurus.com/']
 
-    headers = ['Make', 'Model', 'Year', 'Title', 'Location', 'Condition', 'Price',
+    logging.basicConfig(filename='example.log', encoding='utf-8', level=logging.INFO)
+
+    headers = ['Title', 'Make', 'Model', 'Year', 'Vin No',
+               'Location', 'Condition', 'Price',
                'Average Market Price', 'Main Image', 'Options',
                'Mileage', 'Trim', 'Color', 'Body Type', 'Fuel Type', 'Engine',
                'Deal Rating', 'Days on Market', 'Drive Train', 'City Fuel Economy',
                'Highway Fuel Economy', 'Combined Fuel Economy', 'Dealer Name',
                'Dealer City', 'Dealer State', 'Dealer Zip', 'Dealer Rating',
                # 'Dealer Reviews Count',
-               'Dealer Phone', 'Vin No', 'URL']
+               'Dealer Phone', 'URL']
 
     custom_settings = {
+        'AUTOTHROTTLE_ENABLED': True,
+        'AUTOTHROTTLE_START_DELAY': 1.0,  # Initial delay in seconds
+        'AUTOTHROTTLE_TARGET_CONCURRENCY': 0.5,  # Adjust as needed
+        'AUTOTHROTTLE_DEBUG': True,  # Set to True for debugging
+
         'CONCURRENT_REQUESTS': 3,
         'FEED_EXPORTERS': {'xlsx': 'scrapy_xlsx.XlsxItemExporter'},
         'FEEDS': {
@@ -44,48 +54,55 @@ class UsedcarsSpider(Spider):
                                          self.read_excel_file('output/Previous Cargurus Used Cars Details.xlsx')}
 
     def parse(self, response, **kwargs):
-        companies_value = response.css('#carPickerUsed_makerSelect optgroup option::attr(value)').getall()
-        for company in companies_value[12:13]:
-            print('Comapnay Value : ', company)
-            url = f'https://www.cargurus.com/Cars/l-Used-{company}'
-            yield Request(url=url, callback=self.pagination, meta={'company': company})
+        # Get the Maker Values and make Request
+        companies = response.css('#carPickerUsed_makerSelect optgroup[label="All Makes"] option')
+
+        for company in companies:
+            value = company.css('option::attr(value)').get('')
+            name = company.css('option::text').get('').strip()
+            formatted_name = '-'.join(name.split())
+            url = f'https://www.cargurus.com/Cars/l-Used-{formatted_name}-{value}'
+
+            yield Request(url=url, callback=self.pagination, meta={'company': value})
 
     def pagination(self, response):
         url = response.url
         script = response.css('script:contains(totalListings)').re_first(r'({.*})')
         data = json.loads(script)
         total_results = data.get('totalListings', 0)
-        print('total products are :', total_results)
+        print('Total Cars Found :', total_results)
+
         if total_results > 1:
             total_pages = ceil(total_results / 48)
             print('Total Pages are :', total_pages)
+
             for page_number in range(1, total_pages + 1):
-                if page_number > 2:
-                    break
                 offset = page_number * 48
                 company = response.meta.get('company', '')
+
+                # Get the Company value from response and make json request for records with pagination
                 page_url = f'https://www.cargurus.com/Cars/searchResults.action?entitySelectingHelper.selectedEntity={company}&sourceContext=untrackedExternal_false_0&inventorySearchWidgetType=AUTO&sortDir=ASC&sortType=DEAL_RATING_RPL&shopByTypes=MIX&srpVariation=DEFAULT_SEARCH&nonShippableBaseline=285&offset={offset}&maxResults=48&filtersModified=true'
                 yield Request(url=page_url, callback=self.parse_usedcars, dont_filter=True, meta={'url': url})
+        else:
+            return
 
     def parse_usedcars(self, response):
+        # get response and load into json then get records one by one
         try:
             data = json.loads(response.body)
-
-            if data is None or not isinstance(data, (list, dict)):
-                self.logger.error("Invalid data format: Unable to parse used cars.")
-                return
 
             for car in data:
                 item = OrderedDict()
                 make = car.get('makeName', '')
                 year = car.get('carYear', '')
+                item['Title'] = car.get('listingTitle', '')
                 item['Make'] = car.get('makeName', '')
                 item['Model'] = car.get('modelName', '').replace(str(make), '').replace(str(year), '').strip()
                 item['Year'] = car.get('carYear', '')
-                item['Title'] = car.get('listingTitle', '')
+                item['Vin No'] = car.get('vin', '')
+
                 item['Location'] = car.get('sellerCity', '')
                 item['Condition'] = 'Used'
-
                 item['Price'] = car.get('priceString', '')
                 item['Average Market Price'] = f"${car.get('expectedPrice', '')}"
                 item['Main Image'] = car.get('originalPictureData', {}).get('url', '')
@@ -114,10 +131,9 @@ class UsedcarsSpider(Spider):
                 item['Dealer Rating'] = round(car.get('sellerRating', 0), 2)
                 # item['Dealer Reviews Count'] = car.get('reviewCount', 0)
                 item['Dealer Phone'] = car.get('phoneNumberString', '')
-
-                item['Vin No'] = car.get('vin', '')
                 item['URL'] = response.meta.get('url') + f"#listing={str(car.get('id', ''))}/NONE/DEFAULT"
 
+                self.current_scraped_items.append(item)
                 yield item
 
         except Exception as e:
@@ -153,46 +169,47 @@ class UsedcarsSpider(Spider):
     #     except Exception as e:
     #         self.logger.error(f"Error while parsing used cars: {e}")
 
-    def parse_cardetail(self, response):
-        data = json.loads(response.body)
-        seller_dict = data.get('seller', {})
-        car_dict = data.get('listing', {})
-        item = OrderedDict()
-
-        item['Make'] = car_dict.get('makeName', '')
-        item['Model'] = car_dict.get('listingTitle', '')
-        item['Year'] = car_dict.get('year', '')
-
-        item['Location'] = response.meta.get('Location', '')
-        item['Condition'] = car_dict.get('vehicleCondition', '')
-        item['Price'] = car_dict.get('priceString', '')
-        item['Average Market Price'] = car_dict.get('expectedPrice', '')
-        item['Main Image'] = car_dict.get('spin', {}).get('spinUrl', '')
-        item['Other Images'] = ', '.join([x.get('url', '') for x in car_dict.get('pictures', [])])
-
-        item['Mileage'] = car_dict.get('unitMileage', {}).get('value', 0.0)
-        item['Trim'] = car_dict.get('trimName', '')
-        item['Color'] = response.meta.get('color', '')
-        item['Body Type'] = response.meta.get('body_type', '')
-        item['Fuel Type'] = car_dict.get('localizedFuelType', '')
-        item['Engine'] = car_dict.get('localizedEngineDisplayName', '')
-
-        item['Deal Rating'] = car_dict.get('dealRatingKey', '')
-        item['Accident History Info'] = car_dict.get('vehicleHistory', {}).get('accidentCount', 0)
-        item['Days on Market'] = car_dict.get('listingHistory', {}).get('daysOnCarGurus', '')
-
-        item['Dealer Name'] = seller_dict.get('name', '')
-        item['Dealer Address'] = ', '.join(seller_dict.get('address', {}).get('addressLines', []))
-        item['Dealer Phone'] = seller_dict.get('phoneNumberString', '')
-        item['Vin No'] = car_dict.get('vin', '')
-
-        self.current_scraped_items.append(item)
-        yield item
+    # def parse_cardetail(self, response):
+    #     data = json.loads(response.body)
+    #     seller_dict = data.get('seller', {})
+    #     car_dict = data.get('listing', {})
+    #     item = OrderedDict()
+    #
+    #     item['Make'] = car_dict.get('makeName', '')
+    #     item['Model'] = car_dict.get('listingTitle', '')
+    #     item['Year'] = car_dict.get('year', '')
+    #
+    #     item['Location'] = response.meta.get('Location', '')
+    #     item['Condition'] = car_dict.get('vehicleCondition', '')
+    #     item['Price'] = car_dict.get('priceString', '')
+    #     item['Average Market Price'] = car_dict.get('expectedPrice', '')
+    #     item['Main Image'] = car_dict.get('spin', {}).get('spinUrl', '')
+    #     item['Other Images'] = ', '.join([x.get('url', '') for x in car_dict.get('pictures', [])])
+    #
+    #     item['Mileage'] = car_dict.get('unitMileage', {}).get('value', 0.0)
+    #     item['Trim'] = car_dict.get('trimName', '')
+    #     item['Color'] = response.meta.get('color', '')
+    #     item['Body Type'] = response.meta.get('body_type', '')
+    #     item['Fuel Type'] = car_dict.get('localizedFuelType', '')
+    #     item['Engine'] = car_dict.get('localizedEngineDisplayName', '')
+    #
+    #     item['Deal Rating'] = car_dict.get('dealRatingKey', '')
+    #     item['Accident History Info'] = car_dict.get('vehicleHistory', {}).get('accidentCount', 0)
+    #     item['Days on Market'] = car_dict.get('listingHistory', {}).get('daysOnCarGurus', '')
+    #
+    #     item['Dealer Name'] = seller_dict.get('name', '')
+    #     item['Dealer Address'] = ', '.join(seller_dict.get('address', {}).get('addressLines', []))
+    #     item['Dealer Phone'] = seller_dict.get('phoneNumberString', '')
+    #     item['Vin No'] = car_dict.get('vin', '')
+    #
+    #     self.current_scraped_items.append(item)
+    #     yield item
 
     def close(spider, reason):
         spider.comparison_data()
 
     def get_work_sheet(self, sheet_name, wb, headers):
+        # function for worksheet select or name the worksheet
         if sheet_name in wb.sheetnames:
             sheet = wb[sheet_name]
         else:
@@ -228,12 +245,12 @@ class UsedcarsSpider(Spider):
             wb.remove(sheet)
 
         # # Create or get sheets
-        sold_cars = self.get_work_sheet(sheet_name='previous_records', wb=wb, headers=self.headers)
+        sold_cars = self.get_work_sheet(sheet_name='Sold Cars', wb=wb, headers=self.headers)
 
         # Get the list of VINs from current_scraped_items
         current_scraped_vin = [item.get('Vin No') for item in self.current_scraped_items]
 
-        # Iterate through previous items, and append to sold_cars if VIN not in current_scraped_vin
+        # Iterate through previous items, and append to sold_car sheet if VIN not in current_scraped_vin
         for previous_vin, previous_item in self.previously_scraped_items.items():
             if previous_vin not in current_scraped_vin:
                 row_values = list(previous_item.values())
