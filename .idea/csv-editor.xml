@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CsvFileAttributes">
+    <option name="attributeMap">
+      <map>
+        <entry key="\August 23\Chemist Warehouse Products Scraper\chemistwarehouse\chemistwarehouse\output\Chemist Warehouse Products 250820231718.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\August 23\Sales Products Scraper (with Revenue Calculator)\sales_products\sales_products\Backup\output\Bad Asins\fahrrad Products.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\August 23\Sales Products Scraper (with Revenue Calculator)\sales_products\sales_products\Backup\output\Bad Asins\manomano Products.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\August 23\Sales Products Scraper (with Revenue Calculator)\sales_products\sales_products\output\Bad Asins\manomano Products.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\June 23\Best Buy Scraper\bestbuy_keywords\bestbuy_keywords\output\BestBuy Products 150620231337.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\June 23\Best Buy Scraper\bestbuy_keywords\bestbuy_keywords\output\all_records.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\June 23\Best Buy Scraper\bestbuy_keywords\bestbuy_keywords\output\all_recordsasa.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\June 23\Cars Details Scraper\carvana_cars\carvana_cars\output\car_sold.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\June 23\ebook\books.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\June 23\ebook\data\ebook\ebook_2023-05-02T11-48-13.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Nov 23\Aphc Scraper\aphc\aphc\output\Aphc Scraping Details.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Nov 23\NPR audio scripts\npr\npr\output\NPR Articles Details.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Oct 23\Articles Projects\The_Blog Articles Scraper\the_blog\the_blog\G_Sheet Data\previous_gsheet.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Oct 23\Articles Scraper\Articles\output\mac4ever Articles Scraper.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Oct 23\Articles Scraper\Articles\output\mmamania Articles Scraper.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Oct 23\Articles Scraper\Articles\output\the_blog Articles Scraper.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value=":" />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Sep 23\Indeed Job Search Scraper\indeed\indeed\output\indeed Jobs Detail 200920230104.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Sep 23\Realtor Agents Scraper\realtor\realtor\output\realtorspider Agents Detail 200920230731.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\Sep 23\Realtor Agents Scraper\realtor\realtor\output\zillow Agents Detail 220920231347.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\assignment\EuCitiesTemperatures.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\assignment\output.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+        <entry key="\assignment\studentInfoReformatted.csv">
+          <value>
+            <Attribute>
+              <option name="separator" value="," />
+            </Attribute>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>

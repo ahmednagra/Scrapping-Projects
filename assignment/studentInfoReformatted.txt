@@ -1,0 +1,9 @@
+ed18, Edward Duran, 077, 3.5
+abc1234, Mike Peterson, 123, 3.7
+dw0, Danika Wilson, 083, 3.9
+wd50, Will Davidson, 090, 3
+hpj4332, Helen Jordan, 198, 3.88
+xd222, Xavier Davies, 198, 3.65
+ah1, Allisson  Henson, 147, 2.9
+ne099, Nina Estrada, 095, 2
+sh5555, Skylar Huff, 112, 3.3
