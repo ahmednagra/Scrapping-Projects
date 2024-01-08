@@ -1,13 +1,8 @@
 import glob
-import json
-from datetime import datetime
-from collections import OrderedDict
-
-import xmltodict
-
-from .chemistwarehouse import ChemistScraperSpider
 
 from scrapy import Request
+
+from .chemistwh_by_category import ChemistScraperSpider
 
 
 class ChemistSKuSpider(ChemistScraperSpider):
@@ -24,7 +19,7 @@ class ChemistSKuSpider(ChemistScraperSpider):
             yield Request(url=url, callback=self.parse_product_detail)
 
     def read_skus(self):
-        file_name = ''.join(glob.glob('input/skus.txt'))
+        file_name = ''.join(glob.glob('input/SKUs.txt'))
         try:
             with open(file_name, 'r') as file:
                 lines = file.readlines()
